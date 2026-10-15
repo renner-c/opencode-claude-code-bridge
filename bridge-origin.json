@@ -1,0 +1,16 @@
+{
+  "component": "managed transport protocol functions and reviewed header constants",
+  "upstreamPackage": "opencode-claude-bridge",
+  "upstreamVersion": "1.10.12",
+  "upstreamAuthor": "dotCipher",
+  "upstreamLicense": "MIT",
+  "upstreamCommit": "ed0d49d3712cfc14b3e96fc6a3f949f1e6fea4b2",
+  "upstreamRepository": "https://github.com/dotCipher/opencode-claude-bridge",
+  "upstreamSourceFiles": [
+    "src/index.ts",
+    "src/constants.ts",
+    "src/claude-tools.ts"
+  ],
+  "reusedMaterial": "CLI-compatible identity, beta and billing protocol helpers; header constants and fingerprint salt. No upstream tool-registry replacement or tool-name translation is used.",
+  "notice": "Attribution to dotCipher. The pinned upstream package.json and README declare MIT, but that source tree contains no LICENSE file. LICENSE retains the MIT notice and this provenance limitation. No unverified distribution digest is asserted."
+}

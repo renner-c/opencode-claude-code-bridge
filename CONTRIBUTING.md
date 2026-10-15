@@ -1,0 +1,5 @@
+# Contributing
+
+Use Node.js 20+. Run `npm test`, `npm run check`, `npm run check:release`, and `npm pack --dry-run`. Keep tests hermetic: never use real credentials, Keychain, live usage endpoints, or provider requests. Preserve host instructions, tool/permission semantics, and unrelated OpenCode configuration. Do not add retries, fallback routing, credential refresh, or default usage polling without a separately reviewed design. Keep runtime dependency-free unless strictly necessary. Keep test fixtures synthetic and never place credentials or private account/session data in commits, logs, or package artifacts.
+
+The release-hygiene command checks a narrow repository-file allowlist and common credential/private-path patterns, printing only file names and rule counts. Add any new intentional files to that allowlist after reviewing them. It is a heuristic, not a comprehensive secret scanner: inspect the staged diff, package manifest, and Git author/committer metadata before publishing. Never add real token values to its test-fixture exceptions.

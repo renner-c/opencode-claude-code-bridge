@@ -1,0 +1,16 @@
+{
+  "name": "opencode-claude-code-bridge",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Local Claude Code OAuth transport plugin for OpenCode",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/renner-c/opencode-claude-code-bridge.git" },
+  "homepage": "https://github.com/renner-c/opencode-claude-code-bridge#readme",
+  "bugs": { "url": "https://github.com/renner-c/opencode-claude-code-bridge/issues" },
+  "engines": { "node": ">=20" },
+  "exports": { ".": "./entry.mjs" },
+  "scripts": { "test": "node --test", "check": "node --check entry.mjs && node --check plugin.mjs && node --check auth.mjs && node --check transport.mjs && node --check sse.mjs && node --check bin/config-snippet.mjs && node --check scripts/check-release.mjs", "check:release": "node scripts/check-release.mjs" },
+  "files": ["entry.mjs", "plugin.mjs", "auth.mjs", "transport.mjs", "sse.mjs", "LICENSE", "README.md", "INSTALLATION.md", "SECURITY.md", "CONTRIBUTING.md", "bridge-origin.json", "bin/config-snippet.mjs", "examples/", "scripts/check-release.mjs", "test/"],
+  "bin": { "claude-bridge-config": "bin/config-snippet.mjs" }
+}
